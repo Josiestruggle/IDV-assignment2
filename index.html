@@ -5,54 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Critique of Visualizations</title>
   <style>
-    body {   
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #f9f9f9;
-      color: #333;
+    /* Previous styles remain unchanged */
+    
+    /* Add new layout styles */
+    .image-text-container {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      align-items: flex-start;
     }
-    header, footer {
-      text-align: center;
-      margin-bottom: 20px;
+    
+    .image-container {
+      flex: 1;
+      min-width: 300px;
     }
-    .section {
-      background-color: #fff;
-      padding: 1.5em;
-      margin-bottom: 1.5em;
+    
+    .text-content {
+      flex: 2;
+    }
+    
+    .image-text-container img {
+      width: 100%;
+      height: auto;
       border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    h1, h2, h3 {
-      color: #444;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    li {
-      margin-bottom: 0.5em;
+    
+    @media (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+      }
+      .image-container {
+        width: 100%;
+        min-width: auto;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Critique of Visualizations</h1>
-    <p>This analysis examines two visualization examples by focusing on data issues and idiom issues, and come up with the improvement).</p>
-  </header>
-
-  <!-- Example 1 -->
+  <!-- Example 1 Section -->
   <section class="section">
     <h2>Example 1: Which Jobs Are Using AI the Most?</h2>
-    <h3>
-      <p>
-        Check out the source
+    <div class="source-link">
+      <p>Check out the source
         <a href="https://www.visualcapitalist.com/charted-which-jobs-are-using-ai-the-most/" target="_blank" rel="noopener noreferrer">
           here
         </a>.
       </p>
-    </h3>
-    <!-- Insert image here -->
-  <img src="image/example1.jpg" alt="Visualization Example 1" style="max-width:100%; height:auto;">
+    </div>
+    
+    <div class="image-text-container">
+      <div class="image-container">
+        <img src="image/example1.jpg" alt="AI usage in different job categories visualization">
+      </div>
+      
+      <div class="text-content">
     <p>Two years after ChatGPT’s launch, AI usage has become part of many people’s daily routines, yet adoption differs significantly across various occupations. This infographic, based on Anthropic’s analysis of millions of Claude conversations and data from the U.S. Bureau of Labor Statistics, reveals which jobs rely on AI the most and how each job category’s workforce share compares to its AI engagement.
       The findings show a stark divide between creative or digital professions and labor-intensive fields. For instance, the Computer and Mathematical category—just 3.4% of the U.S. workforce—accounts for a notable 37.2% of Claude queries. Similarly, creative roles in Art, Design, and Media make up 10.3% of AI conversations, underscoring AI’s growing presence in marketing and content creation. In contrast, sectors like Construction, Transportation, Farming, and Food Preparation exhibit minimal AI usage, reflecting a broader trend of limited adoption in most of the U.S. workforce.
       Anthropic’s research also sheds light on how workers use AI. In 57% of conversations, humans and AI collaborate (augmentation), while 43% involve AI performing tasks with minimal human input (automation). Among the most prevalent skills exhibited by Claude were critical thinking, listening, reading comprehension, writing, and programming—indicating a diverse range of AI capabilities in professional contexts.
@@ -80,23 +86,28 @@
       <li><strong>Add Survey Details: </strong> Include a short note on sample size, date of survey, and demographics (region, sector, company sizes) to bolster credibility. </li>
       <li><strong>Use More Direct AI Usage Data: </strong> Ensure the data set directly measures AI usage in each occupation rather than relying on indirect sources like conversation logs from a single AI platform. </li>
       <li><strong>Improve Visual Approach: </strong> If the primary aim is to show which jobs use AI the most, a bar chart is likely clearer than plotting points. Meanwhile, highlighting any gap between “Claude’s share of conversations” and “share of the U.S. labor force” could be shown separately or more distinctly, so viewers understand it’s a different comparison.</li>
-
     </ul>
-  </section>
+  </div>
+</div>
+</section>
 
-  <!-- Example 2 -->
-  <section class="section">
-    <h2>Example 2: California's drought conditions from January 2000 to January 2025</h2>
-    <h3>
-      <p>
-        Check out the source
-        <a href="https://www.voronoiapp.com/climate/Severe-Droughts-Are-Becoming-More-Common-in-California--3642" target="_blank" rel="noopener noreferrer">
-          here
-        </a>.
-      </p>
-    </h3>
-    <!-- Insert image here -->
-  <img src="image/example2.jpg" alt="Visualization Example 1" style="max-width:100%; height:auto;">
+ <!-- Example 2 Section -->
+ <section class="section">
+  <h2>Example 2: California's Drought Conditions (2000-2025)</h2>
+  <div class="source-link">
+    <p>Check out the source
+      <a href="https://www.voronoiapp.com/climate/Severe-Droughts-Are-Becoming-More-Common-in-California--3642" target="_blank" rel="noopener noreferrer">
+        here
+      </a>.
+    </p>
+  </div>
+  
+  <div class="image-text-container">
+    <div class="image-container">
+      <img src="image/example2.jpg" alt="California drought conditions visualization">
+    </div>
+    
+    <div class="text-content">
     <p>The piece illustrates California’s drought severity over time, from 2000 to 2025, using color-coded bar chart graphics that highlight different drought intensity levels. The main goal is to show how conditions have changed historically and may evolve soon. Typically, these levels range from “Abnormally Dry” to “Exceptional Drought,” with each category represented by a distinct color on the chart.</p>
     
     <h3>Data Issues</h3>
@@ -117,9 +128,10 @@
       <li><strong>Use More Detailed Data:</strong> Employ daily or weekly data to better reflect short-term changes, ensuring a more accurate representation of drought patterns. </li>
       <li><strong>Add a Timeline or Interactive Slider: </strong> Letting viewers move through the timeline would help them see year-by-year or season-by-season shifts, preventing small variations from going unnoticed. </li>
       <li><strong>Highlight Significant Events: </strong> Label notable periods (e.g., the severe 2014–2015 drought) to help viewers quickly grasp key shifts and historical benchmarks.</li>
-
     </ul>
-  </section>
+  </div>
+</div>
+</section>
 
   <!-- Conclusion -->
   <section class="section">
@@ -128,8 +140,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 REN Junyao. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
