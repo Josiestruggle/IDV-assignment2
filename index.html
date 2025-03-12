@@ -37,80 +37,81 @@
 <body>
   <header>
     <h1>Critique of Visualizations</h1>
-    <p>This analysis examines two visualization examples by focusing on data issues and idiom (design) issues, using the “what – why – how” model and a 4-step validation framework (domain, data, idiom, tech).</p>
+    <p>This analysis examines two visualization examples by focusing on data issues and idiom issues, and come up with the improvement).</p>
   </header>
 
   <!-- Example 1 -->
   <section class="section">
-    <h2>Example 1: [Number of outbound airport passengers]</h2>
-    <h3>Description</h3>
+    <h2>Example 1: [Which Jobs Are Using AI the Most?]</h2>
+    <h3>source</h3>
     <!-- Insert image here -->
-  <img src="image/example1.png" alt="Visualization Example 1" style="max-width:100%; height:auto;">
-    <p>A short description of what the visualization is intended to represent.</p>
+  <img src="image/example1.jpg" alt="Visualization Example 1" style="max-width:100%; height:auto;">
+    <p>Two years after ChatGPT’s launch, AI usage has become part of many people’s daily routines, yet adoption differs significantly across various occupations. This infographic, based on Anthropic’s analysis of millions of Claude conversations and data from the U.S. Bureau of Labor Statistics, reveals which jobs rely on AI the most and how each job category’s workforce share compares to its AI engagement.
+      The findings show a stark divide between creative or digital professions and labor-intensive fields. For instance, the Computer and Mathematical category—just 3.4% of the U.S. workforce—accounts for a notable 37.2% of Claude queries. Similarly, creative roles in Art, Design, and Media make up 10.3% of AI conversations, underscoring AI’s growing presence in marketing and content creation. In contrast, sectors like Construction, Transportation, Farming, and Food Preparation exhibit minimal AI usage, reflecting a broader trend of limited adoption in most of the U.S. workforce.
+      Anthropic’s research also sheds light on how workers use AI. In 57% of conversations, humans and AI collaborate (augmentation), while 43% involve AI performing tasks with minimal human input (automation). Among the most prevalent skills exhibited by Claude were critical thinking, listening, reading comprehension, writing, and programming—indicating a diverse range of AI capabilities in professional contexts.
+      </p>
     
     <h3>Data Issues</h3>
     <ul>
-      <li><strong>Scale & Accuracy:</strong> The y-axis is truncated, exaggerating differences between values.</li>
-      <li><strong>Missing/Inaccurate Data:</strong> Some data points seem inconsistent with the original data source.</li>
+      <li><strong>1.	No Sample Size or Time Period: </strong> The chart doesn't specify how many respondents were surveyed or when (e.g., Q1 2023). This information is vital for assessing the reliability of the findings. </li>
+      <li><strong>2.	Inaccurate Comparisons with Claude Conversations: </strong> Because “Claude conversations” could come from many user types (including students or other groups), it’s not necessarily accurate to compare job-based AI usage to the share of Claude’s user base. </li>
+      <li><strong>3.	Misaligned Dataset: </strong> Statistics on Claude conversations do not represent all AI usage scenarios, so the chart’s topic or framing may need to be revised to avoid conflating “Claude usage” with “overall AI usage.”</li>
+
     </ul>
     
     <h3>Idiom Issues</h3>
     <ul>
-      <li><strong>Visual Clutter:</strong> Excessive colors and decorative elements make the core message hard to extract.</li>
-      <li><strong>Inappropriate Chart Type:</strong> A pie chart is used to compare too many categories, making distinctions unclear.</li>
+      <li><strong>1.	Overcrowded Chart: </strong> With many data points, it becomes difficult to read and compare values. Some points are too close in position or number, so labeling each point with precise percentages is critical for clarity. </li>
+      <li><strong>2.	Unclear Color Meaning: </strong> The gradient color scheme does not convey additional information, potentially confusing viewers. </li>
+      <li><strong>3.	Missing Legend for Pie Chart:  </strong> A yellow slice appears in the pie chart without a legend or label, making it unclear how it relates to the side text.</li>
+      <li><strong>4.	Two Datasets Merged in One Plot:  </strong> The chart uses points to show percentages for two datasets (e.g., share of U.S. labor force vs. share of Claude conversations), but it doesn’t clearly separate them. The line connecting these two points is confusing, as it doesn’t indicate a meaningful relationship.</li>
+
     </ul>
     
     <h3>Suggestions for Improvement</h3>
     <ul>
-      <li>Use a full-scale y-axis to represent data accurately.</li>
-      <li>Simplify the color scheme or switch to a bar chart for better comparisons.</li>
+      <li><strong>1.	Add Survey Details: </strong> Include a short note on sample size, date of survey, and demographics (region, sector, company sizes) to bolster credibility. </li>
+      <li><strong>2.	Use More Direct AI Usage Data: </strong> Ensure the data set directly measures AI usage in each occupation rather than relying on indirect sources like conversation logs from a single AI platform. </li>
+      <li><strong>3.	Improve Visual Approach: </strong> If the primary aim is to show which jobs use AI the most, a bar chart is likely clearer than plotting points. Meanwhile, highlighting any gap between “Claude’s share of conversations” and “share of the U.S. labor force” could be shown separately or more distinctly, so viewers understand it’s a different comparison.</li>
+
     </ul>
   </section>
 
   <!-- Example 2 -->
   <section class="section">
-    <h2>Example 2: [Average Number of Facebook Likes on Posts by Pages of the Political Left]</h2>
+    <h2>Example 2: [California's drought conditions from January 2000 to January 2025]</h2>
   
-    <h3>Description</h3>
+    <h3>source</h3>
     <!-- Insert image here -->
-  <img src="image/example2.png" alt="Visualization Example 1" style="max-width:100%; height:auto;">
-    <p>A brief explanation of what the second visualization shows.</p>
+  <img src="image/example2.jpg" alt="Visualization Example 1" style="max-width:100%; height:auto;">
+    <p>The piece illustrates California’s drought severity over time, from 2000 to 2025, using color-coded bar chart graphics that highlight different drought intensity levels. The main goal is to show how conditions have changed historically and may evolve soon. Typically, these levels range from “Abnormally Dry” to “Exceptional Drought,” with each category represented by a distinct color on the chart.</p>
     
     <h3>Data Issues</h3>
     <ul>
-      <li><strong>Data Representation:</strong> Data values lack clear labeling, which creates confusion about what is measured.</li>
-      <li><strong>Miscalculation/Alignment:</strong> The aggregation of data isn’t clearly defined, leading to misinterpretation.</li>
+      <li><strong>Missing/Inaccurate data: </strong> the drought condition dataset is quarterly data, but the visualization is consistent for whole 25 years, which is not accurate.</li>
     </ul>
     
     <h3>Idiom Issues</h3>
     <ul>
-      <li><strong>Overuse of Decorative Elements:</strong> Unnecessary 3D effects distort actual values and distract the viewer.</li>
-      <li><strong>Poor Typography/Spacing:</strong> Labels and legends are too small or cluttered, reducing readability.</li>
+      <li><strong>1.	Difficult Year-by-Year Comparison: </strong> Combining five drought classifications in a single bar or chart makes it hard to see how each classification changes over time</li>
+      <li><strong>2.	Lack of Highlighting: </strong> The chart lacks clear labels or highlights, making it difficult for viewers to identify key trends or data points.</li>
+      <li><strong>3.	Sparse Axis Labeling: </strong> With x-axis labels only every five years, viewers may struggle to interpret drought severity in intervening years.</li>
+
     </ul>
     
     <h3>Suggestions for Improvement</h3>
     <ul>
-      <li>Add clear axis labels and data annotations.</li>
-      <li>Remove or simplify 3D effects and use a flat design for clarity.</li>
-      <li>Improve spacing and typography for enhanced readability.</li>
+      <li><strong>1.  Use More Detailed Data:</strong> Employ daily or weekly data to better reflect short-term changes, ensuring a more accurate representation of drought patterns. </li>
+      <li><strong>2.  Add a Timeline or Interactive Slider: </strong> Letting viewers move through the timeline would help them see year-by-year or season-by-season shifts, preventing small variations from going unnoticed. </li>
+      <li><strong>3.  Highlight Significant Events: </strong> Label notable periods (e.g., the severe 2014–2015 drought) to help viewers quickly grasp key shifts and historical benchmarks.</li>
+
     </ul>
   </section>
 
   <!-- Conclusion -->
   <section class="section">
-    <h2>Conclusion</h2>
-    <p>Both examples highlight key issues in data representation and visual design. By applying the “what – why – how” model and the 4-step validation framework, designers can avoid misleading practices and create clearer, more effective visualizations.</p>
-  </section>
-
-  <!-- Tips for Effective Visualizations -->
-  <section class="section">
-    <h2>Tips for Creating Effective Visualizations</h2>
-    <ul>
-      <li>Keep your critique concise using short paragraphs or bullet points.</li>
-      <li>Relate your observations back to the visualization model and validation framework.</li>
-      <li>Offer actionable suggestions for improvement.</li>
-      <li>Use real-world examples (e.g., from Data Is Beautiful or related blogs) to illustrate your points.</li>
-    </ul>
+    <h2>Conclusion and Critical Thinking </h2>
+    <p>From these two examples, it’s clear that effective data visualization hinges on accurate, clearly presented data and a design that aligns with the story being told. Both cases highlight the importance of transparency in methodology, such as specifying sample sizes or timeframes, and clarity in labeling axes, categories, and key findings. When crucial details like data sources or the exact meaning of color schemes are missing, viewers are left to make guesses that may undermine the chart’s message. Meanwhile, critical thinking requires recognizing how idiom choices, like chart type, color palettes, or labeling strategies, can either illuminate or obscure important insights. By ensuring each visualization is grounded in reliable data, employs intuitive design elements, and includes context for interpretation, practitioners can foster a deeper, more informed understanding of the underlying phenomena.</p>
   </section>
 
   <footer>
